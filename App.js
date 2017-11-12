@@ -1,42 +1,15 @@
-import React, { Component } from 'react';
-import { AppRegistry, ScrollView, Image, Text } from 'react-native';
+import React, { Component } from 'react'
+import { View } from 'react-native'
+import About from './components/About'
+import Search from './components/Search'
 
-export default class IScrolledDownAndWhatHappenedNextShockedMe extends Component {
-    render() {
+export default class App extends Component {
+    render () {
         return (
-            <ScrollView>
-                <Text style={{fontSize:96}}>Scroll me plz</Text>
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Text style={{fontSize:96}}>If you like</Text>
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Text style={{fontSize:96}}>Scrolling down</Text>
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Text style={{fontSize:96}}>What's the best</Text>
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Text style={{fontSize:96}}>Framework around?</Text>
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Image source={require('./img/favicon.png')} />
-                <Text style={{fontSize:80}}>React Native</Text>
-            </ScrollView>
-        );
+            <View style={{margin: 30}}>
+                <Search />
+            </View>
+        )
     }
 }
+
