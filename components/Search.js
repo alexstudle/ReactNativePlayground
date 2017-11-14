@@ -10,12 +10,19 @@ export default class Search extends Component {
         }
     }
 
+    setCity (city) {
+        this.setState({
+            city: city
+        })
+    }
+
     render () {
         return (
             <View>
                 <TextInput
                     style={{height: 40, borderColor: 'gray', borderWidth: 1}}
                     value={this.state.city}
+                    onChangeText={(text) => this.setCity(text)}
                 />
             </View>
         )
